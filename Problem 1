@@ -1,0 +1,35 @@
+
+import java.util.ArrayList;
+
+public class Test 
+{
+	public static void main(String[] args)
+	{
+		ArrayList<Integer> numList = new ArrayList();
+		numList.add(4);
+		numList.add(5);
+		numList.add(-1);
+		numList.add(10);
+		numList.add(11);
+		
+		System.out.println(Numbers.computeSum(numList));
+		
+	}
+}
+
+class Numbers 
+{
+	ArrayList<Integer> numbers = new ArrayList();
+	
+	static int computeSum(ArrayList<Integer> ints)
+	{
+		int sum = 0;
+		for(int num: ints)
+		{
+			sum += num;
+		}
+		return sum;
+	}
+}
+
+
